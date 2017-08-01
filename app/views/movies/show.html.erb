@@ -41,11 +41,6 @@
         <% end %>
     </ul>
     
-     <ul>
-      <% Actor.where(:movie_id => @movie.id ).each do |actor| %>
-        <li><a href="/actors/<%= actor.id %>"><%= actor.name %></a></li>
-        <% end %>
-    </ul>
 
 
     <div class="btn-group btn-group-justified">

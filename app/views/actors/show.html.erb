@@ -41,7 +41,6 @@
     </dl>
 
 <ul>
-  
   <% Character.where(:actor_id => @actor.id ).each do |actor| %>
     <li><a href="/characters/<%= actor.id %>"><%= actor.name %></a></li>
     <% end %>

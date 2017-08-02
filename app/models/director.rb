@@ -18,4 +18,9 @@ class Director < ApplicationRecord
 #  - dob: no rules
 #  - bio: no rules
 #  - image_url: no rules
+
+has_many(:actors, :class_name => "Actor", :foreign_key => "movie_id")
+
+has_many(:movies, :class_name => "Movie", :foreign_key => "director_id")
+
 end

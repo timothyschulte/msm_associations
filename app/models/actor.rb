@@ -19,4 +19,8 @@ class Actor < ApplicationRecord
 #  - bio: no rules
 #  - image_url: no rules
 
+has_many(:movies, :class_name => "Movie", :foreign_key => "actor_id")
+
+has_many(:characters, :class_name => "Character", :foreign_key => "actor_id")
+
 end
